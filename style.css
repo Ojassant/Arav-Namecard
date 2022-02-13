@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css2?family=Lobster&display=swap);
+*{
+    box-sizing: border-box;
+}
+ body{
+    text-align: center;
+    background-color: rgb(224,224,155);
+    font-family:lobster,cursive;
+}
+h1{
+    font-size:40px;
+}
+.card>img{
+    width:105%;
+    height:100%;
+    background-color: #dddddd;
+    border:3px solid grey;
+    border-radius:10px;
+    position: absolute;
+    top:0;
+    left:0;
+    
+}
+.card{
+    width:300px;
+    height:400px;
+    margin:50px auto;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out ;
+    transform-origin: 50% 50%;
+}
+#front{
+    z-index:2;
+}
+#back{
+    z-index: 1;
+    transform: rotateY(180deg);
+    color: yellow;
+    padding: 100px;
+}
+.card:hover{
+    transform:rotateY(180deg);
+}
+.change{
+        color: #9c27b0;
+}
+.change:after{
+        content: "";
+        animation: change 15s linear infinite;
+}
+@keyframes change{
+        0%{
+            content: "Arav";
+            color: pink;
+        }
+        10%{
+            content: "Arav";
+            color: black;
+        }
+        20%{
+            content: " Arav";
+            color:  brown;
+        }
+        30%{
+            content: "Arav";
+            color: aqua;
+        }
+        40%{
+            content: "Arav";
+            color: violet;
+        }
+        50%{
+            content: "Arav";
+            color: orange;
+        }
+        60%{
+            content: "Arav";
+            color: green;
+        }
+        70%{
+            content: "Arav";
+            color: blue;
+        }
+        80%{
+            content: "Arav";
+            color: yellow;
+        }
+        90%{
+            content: "Arav";
+            color: indigo;
+        }
+        100%{
+            content: "Arav  ";
+            color: grey;
+        }
+    }    
