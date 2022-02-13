@@ -46,7 +46,7 @@ h1{
         color: #9c27b0;
 }
 .change:after{
-        content: "";
+        content: "Arav";
         animation: change 15s linear infinite;
 }
 @keyframes change{
